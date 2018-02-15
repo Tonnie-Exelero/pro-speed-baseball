@@ -9,6 +9,7 @@ class AuthCtrl {
     this.authType = $state.current.name.replace('app.', '');
 
   }
+  
 
   submitForm() {
     this.isSubmitting = true;
