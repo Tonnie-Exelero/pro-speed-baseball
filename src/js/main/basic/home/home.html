@@ -1,0 +1,116 @@
+<div class="basic-home-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Basic Dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links">
+        <p>
+              <span class="new-review" ng-hide="true">
+              <a href="" ui-sref="app.basic_reviews">New review!  </a>
+            </span>
+          <span class="past-reviews">
+              <a href="" ui-sref="app.basic_reviews">Past reviews</a>
+            </span>
+        </p>
+        <p class="upgrade-text">
+          <a href="">Upgrade to Unlimited Reviews</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <form action="" name="videoForm" novalidate>
+      <div class="row">
+        <!-- Main view - contains video uploads views -->
+        <div class="col-md-5">
+          <div class="upload">
+            <div class="upload-title">
+              Upload video for review
+            </div>
+
+            <div class="row">
+              <div class="cols col-md-4">
+                <div class="custom-controls-stacked">
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Hitting</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Pitching</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Defense</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Throwing</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="cols col-md-8">
+                <div class="dropzone">
+                  <div class="fallback">
+                    <input name="file" type="file" multiple />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="upload-explain">
+              <p>
+                You can upload upto 2 videos for review. We
+                recommend face on and down-the-line from our
+                camera setup video in the pro setup section.
+              </p>
+            </div>
+
+            <div class="upload-explain" ng-hide="true">
+              <p>
+                Next upload will be available the 1st and 15th
+                of every month.
+              </p>
+            </div>
+
+            <div class="upload-success" ng-hide="true">
+              <p>
+                Sent! Your videos have been uploaded and you
+                will be notified via email when review is ready.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5">
+          <div class="notes-title">
+            Notes to Instructor
+          </div>
+
+          <div class="form-group">
+            <label for="text-area"></label>
+            <textarea class="form-control" id="text-area" rows="3" cols="5" placeholder="Write here..."></textarea>
+          </div>
+        </div>
+
+        <div class="upload-button">
+          <button class="btn primary-btn" type="submit">
+            SEND VIDEO
+          </button>
+        </div>
+        <!-- End the row & container divs -->
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+<div class="master-archive-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Master Archive</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.master_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.master_dashboard">Instructor reports</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.master_archive">Archive</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-5">
+        <div class="reports">
+          <div class="reports-title">{{$ctrl.name || 'Andrew Shelton'}} archive</div>
+          <div class="reports-title">This month:
+            <span class="reports-date">January 1 - January 31</span>
+          </div>
+          <div class="reports-details">
+            <div class="">
+              Total submissions completed: {{$ctrl.completed || 54}}
+            </div>
+          </div>
+
+          <br /><br />
+
+          <div class="reports-title">
+            This year:
+          </div>
+          <div class="reports-details">
+            <div class="">
+              Total submissions completed: {{$ctrl.completed || 154}}
+            </div>
+          </div>
+
+          <br /><br />
+
+          <div class="reports-title">
+            Instructors:
+          </div>
+          <div class="reports-details">
+            <div class="">
+              <p><a ui-sref="app.master_instructor">Andrew Shelton</a></p>
+              <p><a ui-sref="">Stephen Davis</a></p>
+              <p><a ui-sref="">Michael Derr</a></p>
+              <p><a ui-sref="">Eric Prater</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4"></div>
+
+      <div class="col-md-3">
+        <div class="reports-title">
+          {{$ctrl.name || 'Andrew Shelton'}} 2018
+        </div>
+        <div class="reports-details">
+          <div class="">
+            <p><a ui-sref="">January</a></p>
+            <p><a ui-sref="">February</a></p>
+            <p><a ui-sref="">March</a></p>
+            <p><a ui-sref="">April</a></p>
+            <p><a ui-sref="">May</a></p>
+            <p><a ui-sref="">June</a></p>
+            <p><a ui-sref="">July</a></p>
+            <p><a ui-sref="">August</a></p>
+            <p><a ui-sref="">September</a></p>
+            <p><a ui-sref="">October</a></p>
+            <p><a ui-sref="">November</a></p>
+            <p><a ui-sref="">December</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

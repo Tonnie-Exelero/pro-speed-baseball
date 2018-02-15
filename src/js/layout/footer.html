@@ -1,0 +1,34 @@
+<footer>
+  <div class="container">
+    <!--<a class="logo-font" ui-sref="app.home" ng-bind="::$ctrl.appName | lowercase"></a>-->
+
+    <a class="logo-font"
+       ui-sref="app.basic_home"
+       ng-show="$ctrl.currentUser.role === 'Basic_User'"
+       ng-bind="::$ctrl.appName | lowercase">
+    </a>
+
+    <a class="logo-font"
+       ui-sref="app.unlimited_home"
+       ng-show="$ctrl.currentUser.role === 'Unlimited_User'"
+       ng-bind="::$ctrl.appName | lowercase">
+    </a>
+
+    <a class="logo-font"
+       ui-sref="app.master_home"
+       ng-show="$ctrl.currentUser.role === 'Master_User'"
+       ng-bind="::$ctrl.appName | lowercase">
+    </a>
+
+    <a class="logo-font"
+       ng-show="!$ctrl.currentUser.role"
+       ng-bind="::$ctrl.appName | lowercase">
+    </a>
+    
+    <span class="attribution">
+      &copy; {{::$ctrl.date | date:'yyyy'}}.
+      An interactive learning project by <a href="http://tonnieexelero.com">Exelero</a>.
+      Code licensed under MIT.
+    </span>
+  </div>
+</footer>

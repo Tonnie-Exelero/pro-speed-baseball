@@ -1,0 +1,41 @@
+<div class="finished-reviews-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Instructor dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a ui-sref="app.instructor_students">Students</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <div class="row review-row">
+      <!-- Main view - contains video uploads views -->
+      <table width="100%" class="text-sm-center">
+        <thead class="table-head">
+        <tr>
+          <th class="text-sm-center">Reviews to do:</th>
+          <th class="text-sm-center">Finished on:</th>
+          <th class="text-sm-center"></th>
+          <th class="text-sm-center">Completed by:</th>
+        </tr>
+        </thead>
+        <tbody class="table-body">
+        <tr>
+          <td><a ui-sref="app.instructor_dashboard">{{$ctrl.name || 'John Smith'}}</a></td>
+          <td>{{$ctrl.date || '1-7-18'}}</td>
+          <td>Download videos</td>
+          <td>Andrew Shelton</td>
+        </tr>
+        </tbody>
+      </table>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

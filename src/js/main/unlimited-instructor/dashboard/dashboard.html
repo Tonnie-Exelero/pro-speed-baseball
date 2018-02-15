@@ -1,0 +1,83 @@
+<div class="unlimited-instructor-dashboard-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <p><h3>{{$ctrl.name || 'Andrew Shelton'}}</h3></p>
+        <h2 class="dashboard-type">Instructor dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.unlimited_instructor_home">Dashboard</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+    <div class="row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-5">
+        <div class="reports-title">{{$ctrl.name || 'John Smith'}}</div>
+        <div class="reports-details">{{$ctrl.date || '1-7-2018'}}</div>
+        <div class="video-gallery">
+          <div class="single-video">
+            <div class="the-video">
+              <img src="images/video.png" width="100%" height="100%" alt="Pro speed baseball">
+            </div>
+            <div class="video-desc">
+              <span class="video-name">{{$ctrl.name || 'Video name'}}</span>
+              <span class="video-download"><a href="">Download</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-notes notes-title">
+          Notes
+        </div>
+        <div class="form-group">
+          <label for="text-area"></label>
+          <textarea class="form-control" id="text-area" rows="3" cols="5" placeholder="Notes here..."></textarea>
+        </div>
+      </div>
+
+      <div class="col-md-2"></div>
+
+      <div class="col-md-5">
+        <div class="reports-title"><a ui-sref="app.unlimited_past_reviews">{{$ctrl.name || 'John Smith'}}'s previous reviews</a></div>
+
+        <div class="upload">
+          <div class="upload-title">
+            Upload finished review
+          </div>
+
+          <form action="" method="post" novalidate name="uploadForm">
+            <div class="row img-upload">
+              <div class="cols col-md-12 text-sm-center">
+                <div class="dropzone">
+                  <div class="fallback">
+                    <input name="file" type="file" multiple />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="upload-button">
+              <button class="btn primary-btn" type="submit">
+                UPLOAD
+              </button>
+            </div>
+          </form>
+
+          <div class="upload-success" ng-hide="true">
+            <p>
+              Sent! Your videos have been uploaded and you
+              will be notified via email when review is ready.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>

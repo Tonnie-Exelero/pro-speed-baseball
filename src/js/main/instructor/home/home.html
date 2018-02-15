@@ -1,0 +1,45 @@
+<div class="instructor-home-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-12">
+        <p><h3>{{$ctrl.name || 'Andrew Shelton'}}</h3></p>
+        <h2 class="dashboard-type">Instructor Dashboard</h2>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+    <div class="row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-12">
+        <table width="100%" class="text-sm-center">
+          <thead class="table-head">
+          <tr>
+            <th class="text-sm-center">Reviews to do:</th>
+            <th class="text-sm-center">Submitted on:</th>
+            <th class="text-sm-center"></th>
+          </tr>
+          </thead>
+          <tbody class="table-body">
+          <tr>
+            <td><a ui-sref="app.instructor_dashboard">{{$ctrl.name || 'John Smith'}}</a></td>
+            <td>{{$ctrl.date || '1-7-18'}}</td>
+            <td>Download videos</td>
+          </tr>
+          <tr>
+            <td>{{$ctrl.name || 'David Arthur'}}</td>
+            <td>{{$ctrl.date || '1-17-18'}}</td>
+            <td>Download videos</td>
+          </tr>
+          <tr>
+            <td>{{$ctrl.name || 'Angela Beasley'}}</td>
+            <td>{{$ctrl.date || '1-23-18'}}</td>
+            <td>Download videos</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- End the row & container divs -->
+  </div>
+</div>

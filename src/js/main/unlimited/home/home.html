@@ -1,0 +1,91 @@
+<div class="unlimited-home-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Unlimited Dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links">
+        <p>
+              <span class="new-review" ng-hide="true">
+              <a href="" ui-sref="app.unlimited_reviews">New review!  </a>
+            </span>
+          <span class="past-reviews">
+              <a href="" ui-sref="app.unlimited_reviews">Past reviews</a>
+            </span>
+        </p>
+        <p class="upgrade-text">
+          <a href="">Instructor: {{$ctrl.name || 'John Doe'}}</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+
+    <form action="" name="videoForm" novalidate>
+      <div class="row">
+        <!-- Main view - contains video uploads views -->
+        <div class="col-md-5">
+          <div class="upload">
+            <div class="upload-title">
+              Upload video for review
+            </div>
+
+            <div class="row img-upload">
+              <div class="cols col-md-12 text-sm-center">
+                <div class="dropzone">
+                  <div class="fallback">
+                    <input name="file" type="file" multiple />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="upload-explain">
+              <p>
+                You can upload upto 6 videos for review. We
+                recommend face on and down-the-line from our
+                camera setup video in the pro setup section.
+              </p>
+            </div>
+
+            <div class="upload-explain" ng-hide="true">
+              <p>
+                Next upload will be available when the instructor
+                completes review.
+              </p>
+            </div>
+
+            <div class="upload-success" ng-hide="true">
+              <p>
+                Sent! Your videos have been uploaded and you
+                will be notified via email when review is ready.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2"></div>
+
+        <div class="col-md-5">
+          <div class="notes-title">
+            Notes to Instructor
+          </div>
+
+          <div class="form-group">
+            <label for="text-area"></label>
+            <textarea class="form-control" id="text-area" rows="3" cols="5" placeholder="Write here..."></textarea>
+          </div>
+        </div>
+
+        <div class="upload-button">
+          <button class="btn primary-btn" type="submit">
+            SEND VIDEO
+          </button>
+        </div>
+        <!-- End the row & container divs -->
+      </div>
+    </form>
+  </div>
+</div>

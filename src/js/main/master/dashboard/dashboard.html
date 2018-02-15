@@ -1,0 +1,64 @@
+<div class="master-dashboard-page">
+  <div class="container page">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="dashboard-type">Dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="past-reviews">
+          <a href="" ui-sref="app.master_home">Dashboard</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.master_archive">Archive</a>
+        </p>
+      </div>
+    </div>
+
+    <hr size="1" color="lightgrey">
+
+    <div class="row">
+      <!-- Main view - contains video uploads views -->
+      <div class="col-md-5">
+        <div class="reports">
+          <div class="reports-title">Basic reviews monthly report
+            <span class="reports-date">21/07/2018</span>
+          </div>
+          <div class="reports-details">
+            <div class="">
+              Total submissions this month: {{$ctrl.submissions || 0}}
+            </div>
+            <div class="">
+              Total submissions completed: {{$ctrl.completed || 0}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-2"></div>
+
+      <div class="col-md-5">
+        <div class="reports">
+          <div class="reports-title">
+            Instructors reviews completed
+          </div>
+          <div class="reports-details">
+            <div class="">
+              Andrew Shelton: {{$ctrl.name || 100}}
+            </div>
+            <div class="">
+              Stephen Davis: {{$ctrl.name || 70}}
+            </div>
+            <div class="">
+              Michael Derr: {{$ctrl.name || 3}}
+            </div>
+            <div class="">
+              Eric Prater: {{$ctrl.name || 3}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End the row & container divs -->
+    </div>
+  </div>
+</div>
