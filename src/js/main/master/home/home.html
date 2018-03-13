@@ -17,12 +17,26 @@
             <label for="tab-one" class="instructor-label">Add instructor</label>
             <div class="tab-content">
               <div class="form-style-2">
-                <form action="" method="post">
-                  <div><span>Name:</span><input type="text" class="input-field" name="field1" value="" /></div>
-                  <div><span>Email address:</span><input type="text" class="input-field" name="field2" value="" /></div>
-                  <div><span>Password:</span><input type="text" class="input-field" name="field2" value="" /></div>
-                  <div><span>&nbsp;</span><input type="submit" value="Add" /></div>
+                <form ng-submit="$ctrl.submitForm()" method="post">
+                  <div><span>Role:</span>
+                    <select name="role" class="input-field" ng-model="$ctrl.formData.role">
+                      <option value="Basic_User">Basic User</option>
+                      <option value="Master_User">Master</option>
+                      <option value="Unlimited_User">Unlimited User</option>
+                      <option value="All_Instructor_User">Instructor</option>
+                      <option value="Unlimited_Instructor_User">Unlimited Instructor</option>
+                    </select>
+                  </div>
+                  <div><span>Name:</span><input type="text" class="input-field" ng-model="$ctrl.formData.username" name="field1" value="" /></div>
+                  <div><span>Email address:</span><input type="email" class="input-field" ng-model="$ctrl.formData.email" name="field2" value="" /></div>
+                  <div><span>Password:</span><input type="password" class="input-field" ng-model="$ctrl.formData.password" name="field2" value="" /></div>
+                  <div><input type="submit" value="Add" /></div>
                 </form>
+              </div>
+              <div class="upload-success">
+                <p>
+                  {{$ctrl.success}}
+                </p>
               </div>
             </div>
           </div>

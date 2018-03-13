@@ -29,20 +29,10 @@
             <th class="text-sm-center"></th>
           </tr>
           </thead>
-          <tbody class="table-body">
-          <tr>
-            <td><a ui-sref="app.unlimited_instructor_dashboard">{{$ctrl.name || 'John Smith'}}</a></td>
-            <td>{{$ctrl.date || '1-7-18'}}</td>
-            <td>Download videos</td>
-          </tr>
-          <tr>
-            <td>{{$ctrl.name || 'David Arthur'}}</td>
-            <td>{{$ctrl.date || '1-17-18'}}</td>
-            <td>Download videos</td>
-          </tr>
-          <tr>
-            <td>{{$ctrl.name || 'Angela Beasley'}}</td>
-            <td>{{$ctrl.date || '1-23-18'}}</td>
+          <tbody class="table-body" ng-repeat="review in $ctrl.reviews">
+          <tr style="margin-bottom: 15px !important;">
+            <td><a ui-sref="app.unlimited_instructor_dashboard({slug: review.slug})">{{review.author.username}}</a></td>
+            <td>{{review.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</td>
             <td>Download videos</td>
           </tr>
           </tbody>

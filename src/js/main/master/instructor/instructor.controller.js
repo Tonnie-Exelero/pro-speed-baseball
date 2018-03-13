@@ -1,32 +1,21 @@
 class MasterInstructorCtrl {
-  constructor(User, Tags, AppConstants, $scope) {
-    'ngInject';
+  constructor(User, MasterHome, AppConstants, $scope, instructor) {
+      'ngInject';
 
-    this.appName = AppConstants.appName;
-    this._$scope = $scope;
+      this.appName = AppConstants.appName;
+      this._$scope = $scope;
+      this._Dash = MasterHome;
 
-    // Get list of all tags
-    Tags
-      .getAll()
-      .then(
-        (tags) => {
-          this.tagsLoaded = true;
-          this.tags = tags
-        }
+      this.instructor = instructor;
+
+      this._Dash.getInstructorCompletedReviews(this.instructor.username).then(
+          (completedCount) => this.completedCount = completedCount
       );
 
-    // Set current list to either feed or all, depending on auth status.
-    this.listConfig = {
-      type: User.current ? 'feed' : 'all'
-    };
-
+      this._Dash.getInstructors().then(
+          (instructors) => this.instructors = instructors
+      );
   }
-
-  changeList(newList) {
-    this._$scope.$broadcast('setListTo', newList);
-  }
-
-
 }
 
 export default MasterInstructorCtrl;

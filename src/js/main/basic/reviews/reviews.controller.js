@@ -1,32 +1,15 @@
 class BasicReviewsCtrl {
-  constructor(User, Tags, AppConstants, $scope) {
-    'ngInject';
+    constructor(AppConstants, $scope, BasicReviews) {
+        'ngInject';
 
-    this.appName = AppConstants.appName;
-    this._$scope = $scope;
+        this.appName = AppConstants.appName;
+        this._$scope = $scope;
+        this._Reviews = BasicReviews;
 
-    // Get list of all tags
-    Tags
-      .getAll()
-      .then(
-        (tags) => {
-          this.tagsLoaded = true;
-          this.tags = tags
-        }
-      );
-
-    // Set current list to either feed or all, depending on auth status.
-    this.listConfig = {
-      type: User.current ? 'feed' : 'all'
-    };
-
-  }
-
-  changeList(newList) {
-    this._$scope.$broadcast('setListTo', newList);
-  }
-
-
+        this._Reviews.getBasicReviews().then(
+            (reviews) => this.reviews = reviews
+        );
+    }
 }
 
 export default BasicReviewsCtrl;

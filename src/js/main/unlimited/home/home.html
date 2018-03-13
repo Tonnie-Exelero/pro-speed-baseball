@@ -23,7 +23,7 @@
     <hr size="1" color="lightgrey">
 
 
-    <form action="" name="videoForm" novalidate>
+    <form ng-submit="$ctrl.submitForm()" name="videoForm">
       <div class="row">
         <!-- Main view - contains video uploads views -->
         <div class="col-md-5">
@@ -36,7 +36,7 @@
               <div class="cols col-md-12 text-sm-center">
                 <div class="dropzone">
                   <div class="fallback">
-                    <input name="file" type="file" multiple />
+                    <input name="file" type="file" ng-model="$ctrl.formData.video" multiple />
                   </div>
                 </div>
               </div>
@@ -50,17 +50,15 @@
               </p>
             </div>
 
-            <div class="upload-explain" ng-hide="true">
+            <div class="upload-success">
               <p>
-                Next upload will be available when the instructor
-                completes review.
+                {{$ctrl.success}}
               </p>
             </div>
 
-            <div class="upload-success" ng-hide="true">
+            <div class="upload-explain">
               <p>
-                Sent! Your videos have been uploaded and you
-                will be notified via email when review is ready.
+                {{$ctrl.nextVideo}}
               </p>
             </div>
           </div>
@@ -75,7 +73,7 @@
 
           <div class="form-group">
             <label for="text-area"></label>
-            <textarea class="form-control" id="text-area" rows="3" cols="5" placeholder="Write here..."></textarea>
+            <textarea class="form-control" id="text-area" ng-model="$ctrl.formData.notes" rows="3" cols="5" placeholder="Write here..."></textarea>
           </div>
         </div>
 

@@ -22,6 +22,13 @@
 
             <fieldset class="form-group" ng-show="$ctrl.authType === 'register'">
               <input class="form-control form-control-lg"
+                     type="hidden"
+                     value="Basic_User"
+                     ng-model="$ctrl.formData.role" />
+            </fieldset>
+
+            <fieldset class="form-group" ng-show="$ctrl.authType === 'register'">
+              <input class="form-control form-control-lg"
                 type="text"
                 placeholder="Username"
                 ng-model="$ctrl.formData.username" />

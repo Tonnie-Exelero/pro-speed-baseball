@@ -30,11 +30,11 @@
             <th class="text-sm-center"></th>
           </tr>
           </thead>
-          <tbody class="table-body">
+          <tbody class="table-body" ng-repeat="video in $ctrl.reviews">
           <tr>
             <td width="50%" style="margin-right: 20%">
               <div class="video-gallery">
-                <div class="video-date">23/07/2018</div>
+                <div class="video-date">{{video.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</div>
                 <div class="single-video">
                   <div class="the-video">
                     <img src="images/video.png" width="100%" height="100%" alt="Pro speed baseball">
@@ -47,31 +47,8 @@
                 Notes
               </div>
 
-              <div class="form-group">
-                <label for="text-area"></label>
-                <textarea class="form-control" id="text-area" rows="3" cols="5" placeholder="Write here..."></textarea>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td width="50%" style="margin-right: 20%">
-              <div class="video-gallery">
-                <div class="video-date">20/07/2018</div>
-                <div class="single-video">
-                  <div class="the-video">
-                    <img src="images/video.png" width="100%" height="100%" alt="Pro speed baseball">
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td width="50%" style="margin-right: 20%">
-              <div class="notes-title">
-                Notes
-              </div>
-
-              <div class="form-group">
-                <label for="text-area1"></label>
-                <textarea class="form-control" id="text-area1" rows="3" cols="5" placeholder="Write here..."></textarea>
+              <div class="video-notes">
+                {{video.notes}}
               </div>
             </td>
           </tr>

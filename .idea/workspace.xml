@@ -2,7 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbe35d68-1861-4f21-8ab2-386982686a32" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/images/video.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/basic_home.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/basic_reviews.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/instructor_home.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/master_home.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/unlimited_home.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/unlimited_instructor_home.service.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/services/unlimited_reviews.service.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pro-speed-baseball" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/style.css" afterPath="$PROJECT_DIR$/src/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/app.js" afterPath="$PROJECT_DIR$/src/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/layout/header.component.js" afterPath="$PROJECT_DIR$/src/js/layout/header.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/auth/auth.controller.js" afterPath="$PROJECT_DIR$/src/js/main/auth/auth.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/auth/auth.html" afterPath="$PROJECT_DIR$/src/js/main/auth/auth.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/basic/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/basic/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/home/index.js" afterPath="$PROJECT_DIR$/src/js/main/basic/home/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/reviews/reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/basic/reviews/reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/basic/reviews/reviews.html" afterPath="$PROJECT_DIR$/src/js/main/basic/reviews/reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.config.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.controller.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/dashboard/index.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/dashboard/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.html" afterPath="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/instructor/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.config.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.html" afterPath="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.html" afterPath="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/students/students.controller.js" afterPath="$PROJECT_DIR$/src/js/main/instructor/students/students.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/instructor/students/students.html" afterPath="$PROJECT_DIR$/src/js/main/instructor/students/students.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/archive/archive.controller.js" afterPath="$PROJECT_DIR$/src/js/main/master/archive/archive.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/archive/archive.html" afterPath="$PROJECT_DIR$/src/js/main/master/archive/archive.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.controller.js" afterPath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/master/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/master/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.config.js" afterPath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.controller.js" afterPath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.html" afterPath="$PROJECT_DIR$/src/js/main/master/instructor/instructor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/settings/settings.controller.js" afterPath="$PROJECT_DIR$/src/js/main/settings/settings.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/settings/settings.html" afterPath="$PROJECT_DIR$/src/js/main/settings/settings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.config.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.config.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited/home/home.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited/home/home.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited/home/home.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited/home/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited/reviews/reviews.controller.js" afterPath="$PROJECT_DIR$/src/js/main/unlimited/reviews/reviews.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/unlimited/reviews/reviews.html" afterPath="$PROJECT_DIR$/src/js/main/unlimited/reviews/reviews.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/index.js" afterPath="$PROJECT_DIR$/src/js/services/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services/user.service.js" afterPath="$PROJECT_DIR$/src/js/services/user.service.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,11 +84,33 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="auth.controller.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/js/main/auth/auth.controller.js">
+      <file leaf-file-name="instructor_home.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/services/instructor_home.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+            <state relative-caret-position="401">
+              <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#41#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="901">
+              <caret line="53" column="86" lean-forward="false" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -33,6 +122,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -97,57 +187,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.config.js" />
         <option value="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/students/students.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/students/students.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/students/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/settings/settings.html" />
-        <option value="$PROJECT_DIR$/src/js/main/master/home/home.html" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/home/home.html" />
-        <option value="$PROJECT_DIR$/src/css/style.css" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.html" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.html" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/students/students.html" />
-        <option value="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.html" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.controller.js" />
         <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/index.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.controller.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.html" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.html" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.html" />
         <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.html" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.html" />
-        <option value="$PROJECT_DIR$/src/js/app.js" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/index.js" />
-        <option value="$PROJECT_DIR$/src/js/layout/header.html" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.html" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.html" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.html" />
         <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.html" />
-        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.config.js" />
-        <option value="$PROJECT_DIR$/src/js/main/auth/auth.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/services/index.js" />
+        <option value="$PROJECT_DIR$/src/js/config/app.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.html" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.html" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/students/students.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/students/students.html" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.html" />
+        <option value="$PROJECT_DIR$/src/js/services/unlimited_instructor_home.service.js" />
+        <option value="$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.html" />
+        <option value="$PROJECT_DIR$/src/js/main/settings/settings.html" />
+        <option value="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.html" />
+        <option value="$PROJECT_DIR$/src/js/main/master/archive/archive.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/master/instructor/instructor.config.js" />
+        <option value="$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/master/archive/archive.html" />
+        <option value="$PROJECT_DIR$/src/js/main/master/instructor/instructor.html" />
+        <option value="$PROJECT_DIR$/src/js/services/master_home.service.js" />
+        <option value="$PROJECT_DIR$/src/js/main/master/instructor/instructor.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/basic/home/home.directive.js" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/js/services/basic_home.service.js" />
+        <option value="$PROJECT_DIR$/src/js/main/basic/home/home.html" />
+        <option value="$PROJECT_DIR$/src/js/main/basic/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/basic/reviews/reviews.html" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/home/home.html" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/home/home.controller.js" />
+        <option value="$PROJECT_DIR$/src/js/main/basic/home/index.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/index.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html" />
+        <option value="$PROJECT_DIR$/src/js/services/instructor_home.service.js" />
+        <option value="$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.controller.js" />
       </list>
     </option>
   </component>
@@ -166,8 +256,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="21" />
-    <option name="width" value="1366" />
+    <option name="x" value="16" />
+    <option name="y" value="24" />
+    <option name="width" value="1350" />
     <option name="height" value="732" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -188,6 +279,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,6 +342,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -276,7 +390,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auth" />
+              <option name="myItemId" value="profile" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,7 +404,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pro-speed-baseball" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instructor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,14 +430,159 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instructor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="instructor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dashboard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="frontend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,20 +590,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="$state.go('app.home')&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Comments&#9;null&#9;null&#10;$state.go('app.home')&#9;null&#9;null" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\TONNIE\Desktop\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js\main" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\images" />
       <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js\main\unlimited-instructor" />
       <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\build" />
       <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js\main\instructor\finished-reviews" />
       <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js\main\instructor" />
-      <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js\main\master\instructor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="A:\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js" />
+      <recent name="C:\Users\TONNIE\Desktop\GIGS\Michael_Pro_Speed_Baseball\App\frontend\src\js\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -436,7 +708,17 @@
       <workItem from="1518472644368" duration="1353000" />
       <workItem from="1518475765263" duration="34784000" />
       <workItem from="1518647073142" duration="12912000" />
-      <workItem from="1518703691532" duration="6875000" />
+      <workItem from="1518703691532" duration="13352000" />
+      <workItem from="1518948163618" duration="578000" />
+      <workItem from="1519068335816" duration="13272000" />
+      <workItem from="1520332809093" duration="18216000" />
+      <workItem from="1520411839949" duration="396000" />
+      <workItem from="1520550265002" duration="34923000" />
+      <workItem from="1520671644071" duration="2019000" />
+      <workItem from="1520720399083" duration="587000" />
+      <workItem from="1520753896632" duration="29239000" />
+      <workItem from="1520842723639" duration="22311000" />
+      <workItem from="1520954993958" duration="13669000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1518706219418</created>
@@ -449,23 +731,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81962000" />
+    <option name="totallyTimeSpent" value="223649000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="21" width="1366" height="732" extended-state="0" />
+    <frame x="16" y="24" width="1350" height="732" extended-state="0" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24924698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2492378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -486,424 +768,398 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/students/students.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="33" lean-forward="false" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/finished-reviews/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/past-reviews/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/pending-reviews/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/settings/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/layout/header.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/basic/reviews/reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/master/archive/archive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/master/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="76" column="30" lean-forward="true" selection-start-line="76" selection-start-column="30" selection-end-line="76" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="279" column="15" lean-forward="false" selection-start-line="279" selection-start-column="12" selection-end-line="279" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="18" column="36" lean-forward="false" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/past-reviews/past-reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/students/students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/finished-reviews/finished-reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/pending-reviews/pending-reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/home/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/students/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="34" lean-forward="false" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/layout/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="47" lean-forward="true" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="30" selection-end-line="0" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/students/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="71" lean-forward="false" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="10" lean-forward="true" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="32" lean-forward="false" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="40" lean-forward="false" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="61" lean-forward="false" selection-start-line="46" selection-start-column="61" selection-end-line="46" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited/reviews/reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/finished-reviews.config.js">
+    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="46" lean-forward="false" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <caret line="5" column="43" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/home/home.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/past-reviews.config.js">
+    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="51">
+          <caret line="3" column="81" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="81" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/pending-reviews/pending-reviews.config.js">
+    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/finished-reviews/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="39" />
+        <state relative-caret-position="85">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/students/students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="72" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="102" lean-forward="false" selection-start-line="30" selection-start-column="102" selection-end-line="30" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/unlimited_instructor_home.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="82" column="5" lean-forward="false" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/dashboard/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/past-reviews/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="75" lean-forward="false" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="46" column="35" lean-forward="false" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/archive/archive.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/home/home.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/unlimited-instructor/students/students.config.js">
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="43" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/students/students.config.js">
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/instructor/instructor.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="-339">
+          <caret line="33" column="72" lean-forward="false" selection-start-line="33" selection-start-column="72" selection-end-line="33" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/instructor/instructor.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/archive/archive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/dashboard/dashboard.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/master/instructor/instructor.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/master_home.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/settings/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.directive.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main/auth/auth.controller.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/ng-file-upload/dist/ng-file-upload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        <state relative-caret-position="306">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="45" column="19" lean-forward="false" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/reviews/reviews.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/reviews/reviews.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="38" column="46" lean-forward="false" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/article/article.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/article/article-actions.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/article/comment.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/basic_home.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="27" lean-forward="true" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="65" column="39" lean-forward="true" selection-start-line="65" selection-start-column="39" selection-end-line="65" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/editor/editor.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/editor/editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/articles.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/comments.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/home/home.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/basic/home/home.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="86" lean-forward="false" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/profile.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/profile/profile.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/home/home.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services/instructor_home.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="91" column="26" lean-forward="true" selection-start-line="91" selection-start-column="26" selection-end-line="91" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/instructor/dashboard/dashboard.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="42" column="43" lean-forward="false" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding />
         </state>
       </provider>

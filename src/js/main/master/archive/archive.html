@@ -27,10 +27,10 @@
           </div>
           <div class="reports-details">
             <div class="">
-              Total submissions this month: {{$ctrl.submissions || 120}}
+              Total submissions this month: {{$ctrl.reviewsCount || 0}}
             </div>
             <div class="">
-              Total submissions completed: {{$ctrl.completed || 54}}
+              Total submissions completed: {{$ctrl.completedCount || 0}}
             </div>
           </div>
 
@@ -41,10 +41,10 @@
           </div>
           <div class="reports-details">
             <div class="">
-              Total submissions this year: {{$ctrl.submissions || 1876}}
+              Total submissions this year: {{$ctrl.reviewsCount || 0}}
             </div>
             <div class="">
-              Total submissions completed: {{$ctrl.completed || 354}}
+              Total submissions completed: {{$ctrl.completedCount || 0}}
             </div>
           </div>
 
@@ -53,12 +53,9 @@
           <div class="reports-title">
             Instructors:
           </div>
-          <div class="reports-details">
+          <div class="reports-details" ng-repeat="instructor in $ctrl.instructors">
             <div class="">
-              <p><a ui-sref="app.master_instructor">Andrew Shelton</a></p>
-              <p><a ui-sref="">Stephen Davis</a></p>
-              <p><a ui-sref="">Michael Derr</a></p>
-              <p><a ui-sref="">Eric Prater</a></p>
+              <a ui-sref="app.master_instructor({name: instructor.username})">{{instructor.username}}</a>
             </div>
           </div>
         </div>

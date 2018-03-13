@@ -26,18 +26,10 @@
           <th class="text-sm-center">Date signed up</th>
         </tr>
         </thead>
-        <tbody class="table-body">
+        <tbody class="table-body" ng-repeat="student in $ctrl.students">
         <tr>
-          <td><a ui-sref="app.unlimited_instructor_dashboard">{{$ctrl.name || 'John Smith'}}</a></td>
-          <td>{{$ctrl.date || '1-7-18'}}</td>
-        </tr>
-        <tr>
-          <td>{{$ctrl.name || 'David Arthur'}}</td>
-          <td>{{$ctrl.date || '1-17-18'}}</td>
-        </tr>
-        <tr>
-          <td>{{$ctrl.name || 'Angela Beasley'}}</td>
-          <td>{{$ctrl.date || '1-23-18'}}</td>
+          <td><a ui-sref="app.unlimited_past_reviews({username: student.username})">{{student.username}}</a></td>
+          <td>{{student.createdAt | date:'dd-MM-yyyy'}}</td>
         </tr>
         </tbody>
       </table>

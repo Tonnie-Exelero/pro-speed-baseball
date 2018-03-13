@@ -298,5 +298,6 @@ input:checked ~ .tab-content {
 }
 
 .video-notes {
-    margin-top: 40px;
+    margin-top: 15px;
+    color: #8c8c8c;
 }

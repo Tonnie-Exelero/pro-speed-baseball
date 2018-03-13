@@ -23,7 +23,7 @@
     <hr size="1" color="lightgrey">
 
 
-    <form action="" name="videoForm" novalidate>
+    <form ng-submit="$ctrl.submitForm()" name="$ctrl.videoForm" enctype="multipart/form-data">
       <div class="row">
         <!-- Main view - contains video uploads views -->
         <div class="col-md-5">
@@ -36,22 +36,22 @@
               <div class="cols col-md-4">
                 <div class="custom-controls-stacked">
                   <label class="custom-control custom-radio">
-                    <input id="radioStacked1" name="radio-stacked" type="radio" class="custom-control-input">
+                    <input id="radioStacked1" name="radio-stacked" ng-model="$ctrl.formData.category" value="hitting" type="radio" class="custom-control-input">
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description">Hitting</span>
                   </label>
                   <label class="custom-control custom-radio">
-                    <input id="radioStacked2" name="radio-stacked" type="radio" class="custom-control-input">
+                    <input id="radioStacked2" name="radio-stacked" ng-model="$ctrl.formData.category" value="pitching" type="radio" class="custom-control-input">
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description">Pitching</span>
                   </label>
                   <label class="custom-control custom-radio">
-                    <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                    <input id="radioStacked3" name="radio-stacked" ng-model="$ctrl.formData.category" value="defense" type="radio" class="custom-control-input">
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description">Defense</span>
                   </label>
                   <label class="custom-control custom-radio">
-                    <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
+                    <input id="radioStacked4" name="radio-stacked" ng-model="$ctrl.formData.category" value="throwing" type="radio" class="custom-control-input">
                     <span class="custom-control-indicator"></span>
                     <span class="custom-control-description">Throwing</span>
                   </label>
@@ -61,7 +61,18 @@
               <div class="cols col-md-8">
                 <div class="dropzone">
                   <div class="fallback">
-                    <input name="file" type="file" multiple />
+                    <input
+                            type="file"
+                            id="upload"
+                            ngf-select
+                            ng-model="$ctrl.formData.video"
+                            name="file"
+                            ngf-pattern="'**/*'"
+                            accept="**/*"
+                            ngf-max-size="50MB"/>
+                    <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
+                    <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
+                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
                   </div>
                 </div>
               </div>
@@ -75,17 +86,15 @@
               </p>
             </div>
 
-            <div class="upload-explain" ng-hide="true">
+            <div class="upload-success">
               <p>
-                Next upload will be available the 1st and 15th
-                of every month.
+                {{$ctrl.success}}
               </p>
             </div>
 
-            <div class="upload-success" ng-hide="true">
+            <div class="upload-explain">
               <p>
-                Sent! Your videos have been uploaded and you
-                will be notified via email when review is ready.
+                {{$ctrl.nextVideo}}
               </p>
             </div>
           </div>
@@ -100,7 +109,7 @@
 
           <div class="form-group">
             <label for="text-area"></label>
-            <textarea class="form-control" id="text-area" rows="3" cols="5" placeholder="Write here..."></textarea>
+            <textarea class="form-control" id="text-area" ng-model="$ctrl.formData.notes" rows="3" cols="5" placeholder="Write here..."></textarea>
           </div>
         </div>
 

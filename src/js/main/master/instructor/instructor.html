@@ -25,13 +25,13 @@
       <!-- Main view - contains video uploads views -->
       <div class="col-md-5">
         <div class="reports">
-          <div class="reports-title">{{$ctrl.name || 'Andrew Shelton'}} archive</div>
+          <div class="reports-title">{{$ctrl.instructor.username}}'s archive</div>
           <div class="reports-title">This month:
             <span class="reports-date">January 1 - January 31</span>
           </div>
           <div class="reports-details">
             <div class="">
-              Total submissions completed: {{$ctrl.completed || 54}}
+              Total submissions completed: {{$ctrl.completedCount || 0}}
             </div>
           </div>
 
@@ -42,7 +42,7 @@
           </div>
           <div class="reports-details">
             <div class="">
-              Total submissions completed: {{$ctrl.completed || 154}}
+              Total submissions completed: {{$ctrl.completedCount || 0}}
             </div>
           </div>
 
@@ -51,12 +51,9 @@
           <div class="reports-title">
             Instructors:
           </div>
-          <div class="reports-details">
+          <div class="reports-details" ng-repeat="instructor in $ctrl.instructors">
             <div class="">
-              <p><a ui-sref="app.master_instructor">Andrew Shelton</a></p>
-              <p><a ui-sref="">Stephen Davis</a></p>
-              <p><a ui-sref="">Michael Derr</a></p>
-              <p><a ui-sref="">Eric Prater</a></p>
+              <a ui-sref="app.master_instructor({name: instructor.username})">{{instructor.username}}</a>
             </div>
           </div>
         </div>
@@ -66,7 +63,7 @@
 
       <div class="col-md-3">
         <div class="reports-title">
-          {{$ctrl.name || 'Andrew Shelton'}} 2018
+          {{$ctrl.instructor.username}} 2018
         </div>
         <div class="reports-details">
           <div class="">

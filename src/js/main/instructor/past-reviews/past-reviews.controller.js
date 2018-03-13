@@ -1,32 +1,18 @@
 class PastReviewsCtrl {
-  constructor(User, Tags, AppConstants, $scope) {
-    'ngInject';
+    constructor(User, InstructorHome, AppConstants, $scope, reviews) {
+        'ngInject';
 
-    this.appName = AppConstants.appName;
-    this._$scope = $scope;
+        this.appName = AppConstants.appName;
+        this._$scope = $scope;
+        this._Reviews = InstructorHome;
+        this.currentUser = User.current;
 
-    // Get list of all tags
-    Tags
-      .getAll()
-      .then(
-        (tags) => {
-          this.tagsLoaded = true;
-          this.tags = tags
-        }
-      );
+        $scope.$watch('User.current', (newUser) => {
+            this.currentUser = newUser;
+        });
 
-    // Set current list to either feed or all, depending on auth status.
-    this.listConfig = {
-      type: User.current ? 'feed' : 'all'
-    };
-
-  }
-
-  changeList(newList) {
-    this._$scope.$broadcast('setListTo', newList);
-  }
-
-
+        this.reviews = reviews;
+    }
 }
 
 export default PastReviewsCtrl;

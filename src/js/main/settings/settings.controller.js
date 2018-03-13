@@ -11,7 +11,7 @@ class SettingsCtrl {
             bio: User.current.bio,
             image: User.current.image,
             username: User.current.username
-        }
+        };
 
         this.logout = User.logout.bind(User);
 

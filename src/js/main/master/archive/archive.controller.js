@@ -1,32 +1,23 @@
 class MasterArchiveCtrl {
-  constructor(User, Tags, AppConstants, $scope) {
-    'ngInject';
+    constructor(User, MasterHome, AppConstants, $scope) {
+        'ngInject';
 
-    this.appName = AppConstants.appName;
-    this._$scope = $scope;
+        this.appName = AppConstants.appName;
+        this._$scope = $scope;
+        this._Dash = MasterHome;
 
-    // Get list of all tags
-    Tags
-      .getAll()
-      .then(
-        (tags) => {
-          this.tagsLoaded = true;
-          this.tags = tags
-        }
-      );
+        this._Dash.getMonthReviews().then(
+            (reviewsCount) => this.reviewsCount = reviewsCount
+        );
 
-    // Set current list to either feed or all, depending on auth status.
-    this.listConfig = {
-      type: User.current ? 'feed' : 'all'
-    };
+        this._Dash.getCompletedReviews().then(
+            (completedCount) => this.completedCount = completedCount
+        );
 
-  }
-
-  changeList(newList) {
-    this._$scope.$broadcast('setListTo', newList);
-  }
-
-
+        this._Dash.getInstructors().then(
+            (instructors) => this.instructors = instructors
+        );
+    }
 }
 
 export default MasterArchiveCtrl;

@@ -1,32 +1,86 @@
 class InstructorDashboardCtrl {
-  constructor(User, Tags, AppConstants, $scope) {
-    'ngInject';
+    constructor(User, AppConstants, $scope, review, InstructorHome, Upload) {
+        'ngInject';
 
-    this.appName = AppConstants.appName;
-    this._$scope = $scope;
+        this.appName = AppConstants.appName;
+        this._$scope = $scope;
+        this._InHome = InstructorHome;
+        this.currentUser = User.current;
 
-    // Get list of all tags
-    Tags
-      .getAll()
-      .then(
-        (tags) => {
-          this.tagsLoaded = true;
-          this.tags = tags
-        }
-      );
+        this.formData = {};
 
-    // Set current list to either feed or all, depending on auth status.
-    this.listConfig = {
-      type: User.current ? 'feed' : 'all'
-    };
+        this.fileInput = document.getElementById('upload');
 
-  }
+        $scope.$watch('User.current', (newUser) => {
+            this.currentUser = newUser;
+        });
 
-  changeList(newList) {
-    this._$scope.$broadcast('setListTo', newList);
-  }
+        this.review = review;
 
+        this.downloadFile = function(file){
+            this.isSubmitting = true;
 
+            this._InHome.download(file).then(
+                (res) => {
+                    console.log('Successful download');
+                    window.open('http://localhost:3000/api/instructor/download?file=' + file)
+                },
+                (err) => {
+                    this.isSubmitting = false;
+                    this.errors = err.data.errors;
+                }
+            )
+        };
+
+        this.updateReview = function() {
+            this.isSubmitting = true;
+
+            if (this.uploadForm.file.$valid) { //check if from is valid
+                this.upload(this.formData.video); //call upload function
+            }
+
+            review = {
+                author: this.review.author,
+                reviewed: true,
+                reviewedBy: User.current.username,
+                video2: this.fileInput.files[0].name
+            };
+
+            console.log(this.review);
+
+            this._InHome.update(this.review, review).then(
+                (res) => {
+                    this.success = 'Sent! Your video review has been uploaded successfully';
+
+                    this.formData = {};
+                },
+
+                (err) => {
+                    this.isSubmitting = false;
+                    this.errors = err.data.errors;
+                }
+            )
+        };
+
+        this.upload = function (file) {
+            Upload.upload({
+                url: 'http://localhost:3000/api/basic/videoUpload', //webAPI exposed to upload the file
+                data: {file: this.formData.video} //pass file as data, should be user ng-model
+            }).then(function (resp) { //upload function returns a promise
+                if (resp.data.error_code === 0) { //validate success
+                    console.log(resp.config.data.file.name + ' uploaded successfully.');
+                } else {
+                    console.log('An error occurred');
+                }
+            }, function (resp) { //catch error
+                console.log('Error status: ' + resp.status);
+            }, function (evt) {
+                console.log(evt);
+                var progressPercentage = parseInt(100.0 * evt.loaded / evt.total);
+                console.log('Progress: ' + progressPercentage + '% ' + evt.config.data.file.name);
+            });
+        };
+    }
 }
 
 export default InstructorDashboardCtrl;
