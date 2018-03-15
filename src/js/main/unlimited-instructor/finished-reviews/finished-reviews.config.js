@@ -7,7 +7,7 @@ function UnlimitedFinishedReviewsConfig($stateProvider) {
     controller: 'UnlimitedFinishedReviewsCtrl',
     controllerAs: '$ctrl',
     templateUrl: 'main/unlimited-instructor/finished-reviews/finished-reviews.html',
-    title: 'Unlimited finished reviews'
+    title: 'Finished reviews'
   });
 }
 

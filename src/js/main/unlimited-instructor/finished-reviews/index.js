@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 // Create the module where our functionality can attach to
-let unlimitedFinishedReviewsModule = angular.module('app.unlimited_finished_reviews', []);
+let unlimitedFinishedReviewsModule = angular.module('app.unlimited_instructor_finished_reviews', []);
 
 // Include our UI-Router config settings
 import UnlimitedFinishedReviewsConfig from './finished-reviews.config';

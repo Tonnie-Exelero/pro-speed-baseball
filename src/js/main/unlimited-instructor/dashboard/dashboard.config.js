@@ -3,16 +3,16 @@ function UnlimitedInstructorDashboardConfig($stateProvider) {
 
     $stateProvider
         .state('app.unlimited_instructor_dashboard', {
-            url: '/unlimited-instructor/:slug',
+            url: '/unlimited-instructor-dashboard/:slug',
             controller: 'UnlimitedInstructorDashboardCtrl',
             controllerAs: '$ctrl',
             templateUrl: 'main/unlimited-instructor/dashboard/dashboard.html',
-            title: 'Unlimited instructor dashboard',
+            title: 'Unlimited Instructor dashboard',
             resolve: {
                 review: function(InstructorHome, $state, $stateParams) {
                     return InstructorHome.get($stateParams.slug).then(
                         (review) => review,
-                        (err) => $state.go('app.instructor_home')
+                        (err) => $state.go('app.unlimited_instructor_dashboard')
                     )
                 }
             }

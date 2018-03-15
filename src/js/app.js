@@ -63,17 +63,15 @@ const requires = [
     'app.pending_reviews',
     'app.instructor_students',
     'app.unlimited_instructor_dashboard',
-    'app.unlimited_finished_reviews',
+    'app.unlimited_instructor_finished_reviews',
     'app.unlimited_instructor_home',
     'app.unlimited_past_reviews',
     'app.unlimited_pending_reviews',
     'app.unlimited_instructor_students',
     'app.profile',
-    'app.article',
     'app.services',
     'app.auth',
-    'app.settings',
-    'app.editor'
+    'app.settings'
 ];
 
 // Mount on window for testing

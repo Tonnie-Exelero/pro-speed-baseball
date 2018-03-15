@@ -14,16 +14,13 @@
               <a href="" ui-sref="app.unlimited_reviews">Past reviews</a>
             </span>
         </p>
-        <p class="upgrade-text">
-          <a href="">Instructor: {{$ctrl.name || 'John Doe'}}</a>
-        </p>
       </div>
     </div>
 
     <hr size="1" color="lightgrey">
 
 
-    <form ng-submit="$ctrl.submitForm()" name="videoForm">
+    <form ng-submit="$ctrl.submitForm()" name="$ctrl.videoForm" enctype="multipart/form-data">
       <div class="row">
         <!-- Main view - contains video uploads views -->
         <div class="col-md-5">
@@ -32,11 +29,48 @@
               Upload video for review
             </div>
 
-            <div class="row img-upload">
-              <div class="cols col-md-12 text-sm-center">
+            <div class="row">
+              <!--<div class="cols col-md-4">
+                <div class="custom-controls-stacked">
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked1" name="radio-stacked" ng-model="$ctrl.formData.category" value="hitting" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Hitting</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked2" name="radio-stacked" ng-model="$ctrl.formData.category" value="pitching" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Pitching</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked3" name="radio-stacked" ng-model="$ctrl.formData.category" value="defense" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Defense</span>
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="radioStacked4" name="radio-stacked" ng-model="$ctrl.formData.category" value="throwing" type="radio" class="custom-control-input">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description">Throwing</span>
+                  </label>
+                </div>
+              </div>-->
+
+              <div class="cols col-md-8">
                 <div class="dropzone">
                   <div class="fallback">
-                    <input name="file" type="file" ng-model="$ctrl.formData.video" multiple />
+                    <input
+                            type="file"
+                            id="upload"
+                            ngf-select
+                            ng-model="$ctrl.formData.video"
+                            name="file"
+                            ngf-pattern="'**/*'"
+                            accept="**/*"
+                            ngf-max-size="50MB"/>
+                    <p>Max: 50MB</p>
+                    <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
+                    <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
+                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
                   </div>
                 </div>
               </div>

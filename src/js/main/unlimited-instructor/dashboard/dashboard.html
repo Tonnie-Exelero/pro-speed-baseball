@@ -26,8 +26,7 @@
               <img src="images/video.png" width="100%" height="100%" alt="Pro speed baseball">
             </div>
             <div class="video-desc">
-              <span class="video-name">{{$ctrl.review.name || 'Video name'}}</span>
-              <span class="video-download"><a href="">Download</a></span>
+              <span class="video-download"><a href="" ng-click="$ctrl.downloadFile($ctrl.review.video)">Download</a></span>
             </div>
           </div>
         </div>
@@ -51,12 +50,23 @@
             Upload finished review
           </div>
 
-          <form action="" method="post" novalidate name="uploadForm">
+          <form ng-submit="$ctrl.updateReview()" method="post" novalidate name="$ctrl.uploadForm">
             <div class="row img-upload">
               <div class="cols col-md-12 text-sm-center">
                 <div class="dropzone">
                   <div class="fallback">
-                    <input name="file" type="file" multiple />
+                    <input
+                            type="file"
+                            id="upload"
+                            ngf-select
+                            ng-model="$ctrl.formData.video"
+                            name="file"
+                            ngf-pattern="'**/*'"
+                            accept="**/*"
+                            ngf-max-size="50MB"/>
+                    <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
+                    <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
+                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
                   </div>
                 </div>
               </div>
@@ -69,10 +79,10 @@
             </div>
           </form>
 
-          <div class="upload-success" ng-hide="true">
+          <div class="upload-success">
             <p>
-              Sent! Your videos have been uploaded and you
-              will be notified via email when review is ready.
+              <br /><br />
+              {{$ctrl.success}}
             </p>
           </div>
         </div>

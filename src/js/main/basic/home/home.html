@@ -70,6 +70,7 @@
                             ngf-pattern="'**/*'"
                             accept="**/*"
                             ngf-max-size="50MB"/>
+                    <p>Max: 50MB</p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
                       {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>

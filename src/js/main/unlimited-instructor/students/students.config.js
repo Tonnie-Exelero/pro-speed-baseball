@@ -7,7 +7,7 @@ function UnlimitedInstructorStudentsConfig($stateProvider) {
     controller: 'UnlimitedInstructorStudentsCtrl',
     controllerAs: '$ctrl',
     templateUrl: 'main/unlimited-instructor/students/students.html',
-    title: 'Unlimited students'
+    title: 'Unlimited Students'
   });
 }
 

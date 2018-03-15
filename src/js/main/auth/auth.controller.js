@@ -30,7 +30,7 @@ class AuthCtrl {
         } else if (res.data.user.role === "All_Instructor_User"){
             this._$state.go('app.instructor_home');
         } else if (res.data.user.role === "Unlimited_Instructor_User"){
-            this._$state.go('app.unlimited_ instructor_home');
+            this._$state.go('app.unlimited_instructor_home');
         }
       },
       (err) => {

@@ -1,17 +1,15 @@
 class UnlimitedReviewsCtrl {
-    constructor(AppConstants, $scope, UnlimitedReviews) {
+    constructor(AppConstants, $scope, BasicReviews) {
         'ngInject';
 
         this.appName = AppConstants.appName;
         this._$scope = $scope;
-        this._UnReviews = UnlimitedReviews;
+        this._Reviews = BasicReviews;
 
-        this._UnReviews.getUnlimitedReviews().then(
+        this._Reviews.getBasicReviews().then(
             (reviews) => this.reviews = reviews
         );
     }
-
-
 }
 
 export default UnlimitedReviewsCtrl;

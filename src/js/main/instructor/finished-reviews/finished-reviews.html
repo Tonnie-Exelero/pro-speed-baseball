@@ -30,8 +30,8 @@
         <tr style="margin-bottom: 15px !important;">
           <td><a ui-sref="app.instructor_dashboard({slug: review.slug})">{{review.author.username}}</a></td>
           <td>{{review.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</td>
-          <td>Download videos</td>
-          <td>{{review.instructor || "Andrew Shelton"}}</td>
+          <td><a href="" ng-click="$ctrl.downloadFile(review.video)">Download</a></td>
+          <td>{{review.reviewedBy}}</td>
         </tr>
         </tbody>
       </table>

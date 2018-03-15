@@ -17,6 +17,8 @@ class InstructorDashboardCtrl {
 
         this.review = review;
 
+        console.log(this.review);
+
         this.downloadFile = function(file){
             this.isSubmitting = true;
 
@@ -45,8 +47,6 @@ class InstructorDashboardCtrl {
                 reviewedBy: User.current.username,
                 video2: this.fileInput.files[0].name
             };
-
-            console.log(this.review);
 
             this._InHome.update(this.review, review).then(
                 (res) => {

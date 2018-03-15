@@ -7,9 +7,8 @@ function UnlimitedPendingReviewsConfig($stateProvider) {
     controller: 'UnlimitedPendingReviewsCtrl',
     controllerAs: '$ctrl',
     templateUrl: 'main/unlimited-instructor/pending-reviews/pending-reviews.html',
-    title: 'Unlimited pending reviews'
+    title: 'Unlimited Pending reviews'
   });
-
-};
+}
 
 export default UnlimitedPendingReviewsConfig;

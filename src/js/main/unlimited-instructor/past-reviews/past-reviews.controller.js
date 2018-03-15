@@ -1,10 +1,10 @@
 class UnlimitedPastReviewsCtrl {
-    constructor(User, UnlimitedInstructorHome, AppConstants, $scope, reviews) {
+    constructor(User, InstructorHome, AppConstants, $scope, reviews) {
         'ngInject';
 
         this.appName = AppConstants.appName;
         this._$scope = $scope;
-        this._Reviews = UnlimitedInstructorHome;
+        this._Reviews = InstructorHome;
         this.currentUser = User.current;
 
         $scope.$watch('User.current', (newUser) => {
