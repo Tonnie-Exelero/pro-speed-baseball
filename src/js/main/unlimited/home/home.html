@@ -6,14 +6,14 @@
       </div>
 
       <div class="col-md-6 right-links">
-        <p>
-              <span class="new-review" ng-hide="true">
-              <a href="" ui-sref="app.unlimited_reviews">New review!  </a>
-            </span>
+        <div>
+          <span class="new-review" ng-if="$ctrl.newReview === true">
+            <a href="" ui-sref="app.unlimited_reviews">New review!  </a>
+          </span>
           <span class="past-reviews">
-              <a href="" ui-sref="app.unlimited_reviews">Past reviews</a>
-            </span>
-        </p>
+            <a href="" ui-sref="app.unlimited_reviews">Past reviews</a>
+          </span>
+        </div>
       </div>
     </div>
 

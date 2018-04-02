@@ -22,7 +22,7 @@
       <div class="col-md-5">
         <div class="reports">
           <div class="reports-title">Basic reviews monthly report
-            <span class="reports-date">21/07/2018</span>
+            <span class="reports-date"></span>
           </div>
           <div class="reports-details">
             <div class="">
@@ -44,7 +44,7 @@
           </div>
           <div class="reports-details" ng-repeat="instructor in $ctrl.instructors">
             <div class="" ng-repeat="count in $ctrl.completedCount">
-              {{instructor.username || "Err"}}:  {{count.completedCount || "0"}}
+              {{instructor.username || "Err"}}:  {{count.completedCount || 0}}
             </div>
           </div>
         </div>

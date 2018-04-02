@@ -6,6 +6,10 @@ class MasterDashboardCtrl {
         this._$scope = $scope;
         this._Dash = MasterHome;
 
+        this.currentDate = new Date();
+
+        this.pastDate = this.currentDate - 30;
+
         this._Dash.getMonthReviews().then(
             (reviewsCount) => this.reviewsCount = reviewsCount
         );

@@ -45,7 +45,9 @@ class InstructorDashboardCtrl {
                 author: this.review.author,
                 reviewed: true,
                 reviewedBy: User.current.username,
-                video2: this.fileInput.files[0].name
+                reviewChecked: false,
+                video2: this.fileInput.files[0].name,
+                notes2: this.formData.notes2
             };
 
             this._InHome.update(this.review, review).then(

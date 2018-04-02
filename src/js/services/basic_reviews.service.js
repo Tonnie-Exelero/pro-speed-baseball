@@ -16,4 +16,12 @@ export default class BasicReviews {
             method: 'GET'
         }).then((res) => res.data.reviews);
     }
+
+    updateRead(video, field) {
+        return this._$http({
+            url: this._AppConstants.api + '/basic/update?slug=' + video.slug,
+            method: 'PUT',
+            data: {basic: field}
+        }).then((res) => res.data.review);
+    }
 }

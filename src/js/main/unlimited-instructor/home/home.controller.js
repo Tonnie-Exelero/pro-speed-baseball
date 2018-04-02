@@ -7,12 +7,23 @@ class UnlimitedInstructorHomeCtrl {
         this._InHome = InstructorHome;
         this.currentUser = User.current;
 
+        this.timeStamp = Math.round(new Date().getTime());
+
         $scope.$watch('User.current', (newUser) => {
             this.currentUser = newUser;
         });
 
         this._InHome.getReviews().then(
-            (reviews) => this.reviews = reviews
+            (reviews) => {
+                var i;
+                for (i=0; i<reviews.length; i++){
+                    if (reviews[i].createdAt){
+                        reviews[i].createdDate = Date.parse(reviews[i].createdAt)
+                    }
+                }
+
+                this.reviews = reviews;
+            }
         );
 
         this.downloadFile = function(file){

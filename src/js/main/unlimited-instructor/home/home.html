@@ -1,9 +1,18 @@
 <div class="unlimited-instructor-home-page">
   <div class="container page">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
         <p><h2>{{$ctrl.currentUser.username}}</h2></p>
         <h2 class="dashboard-type">Instructor Dashboard</h2>
+      </div>
+
+      <div class="col-md-6 right-links text-sm-right">
+        <p class="upgrade-text">
+          <a ui-sref="app.unlimited_pending_reviews">Pending reviews</a>
+        </p>
+        <p class="upgrade-text">
+          <a ui-sref="app.unlimited_finished_reviews">Finished reviews</a>
+        </p>
       </div>
     </div>
 
@@ -23,7 +32,10 @@
           <tbody class="table-body" ng-repeat="review in $ctrl.reviews">
           <tr style="margin-bottom: 15px !important;">
             <td><a ui-sref="app.unlimited_instructor_dashboard({slug: review.slug})">{{review.author.username}}</a></td>
-            <td>{{review.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</td>
+            <td>
+              <span ng-if="$ctrl.timeStamp - review.createdDate > 172800000" style="color: red">{{review.createdDate | date:'dd-MM-yyyy - HH:mm:ss'}}</span>
+              <span ng-if="$ctrl.timeStamp - review.createdDate < 172800000">{{review.createdDate | date:'dd-MM-yyyy - HH:mm:ss'}}</span>
+            </td>
             <td><a href="" ng-click="$ctrl.downloadFile(review.video)">Download</a></td>
           </tr>
           </tbody>

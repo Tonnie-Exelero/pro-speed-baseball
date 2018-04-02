@@ -30,7 +30,7 @@
           <tr>
             <td width="50%" style="margin-right: 20%">
               <div class="video-gallery">
-                <div class="video-date">{{video.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}</div>
+                <div class="video-date">{{video.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}} <span ng-if="video.reviewChecked === false" style="color: orangered">New review</span></div>
                 <div class="single-video">
                   <div class="the-video">
                     <img src="images/video.png" width="100%" height="100%" alt="Pro speed baseball">
@@ -40,11 +40,12 @@
             </td>
             <td width="50%" style="margin-right: 20%">
               <div class="notes-title">
-                Notes
+                Notes <a href=""><span ng-if="video.reviewChecked === false" style="font-size: 12px;" ng-click="$ctrl.markRead(video)">Mark read</span></a>
               </div>
 
               <div class="video-notes">
-                {{video.notes}}
+                <p style="color: red">{{video.notes2}}</p>
+                <p>{{video.notes}}</p>
               </div>
             </td>
           </tr>

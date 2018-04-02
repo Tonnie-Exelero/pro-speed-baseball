@@ -1,17 +1,30 @@
 class UnlimitedHomeCtrl {
-    constructor(AppConstants, $scope, BasicHome, User, Upload) {
+    constructor(AppConstants, $scope, BasicHome, BasicReviews, User, Upload) {
         'ngInject';
 
         this.appName = AppConstants.appName;
         this._$scope = $scope;
         this._User = User;
         this.currentUser = User.current;
-
+        this._Reviews = BasicReviews;
         this._Basic = BasicHome;
 
         this.formData = {};
 
         this.fileInput = document.getElementById('upload');
+
+        this._Reviews.getBasicReviews().then(
+            (reviews) => {
+                this.reviews = reviews;
+
+                var i;
+                for (i=0; i<reviews.length; i++){
+                    if (reviews[i].reviewed === true && reviews[i].reviewChecked === false){
+                        this.newReview = true
+                    }
+                }
+            }
+        );
 
         this.upload = function (file) {
             Upload.upload({
