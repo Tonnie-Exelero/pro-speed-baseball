@@ -72,4 +72,19 @@ export default class MasterHome {
 
         return deferred.promise;
     }
+
+    getUsers() {
+        return this._$http({
+            url: this._AppConstants.api + '/master/allUsers',
+            method: 'GET'
+        }).then((res) => res.data.users);
+    }
+
+    updateUser(user) {
+        return this._$http({
+            url: this._AppConstants.api + '/master/update?id=' + user._id,
+            method: 'PUT',
+            data: {user: user}
+        }).then((res) => res.data.user);
+    }
 }

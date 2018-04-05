@@ -5,14 +5,54 @@ class MasterHomeCtrl {
         this.appName = AppConstants.appName;
         this._$scope = $scope;
         this._$state = $state;
-        this._User = MasterHome;
+        this._Master = MasterHome;
         this.authType = 'app.register';
+
+        this.formData = {};
+
+        this._Master.getUsers().then(
+            (users) => this.users = users
+        );
+
+        this.deactivateUser = function (user) {
+            this.isSubmitting = true;
+
+            user.active = false;
+
+            this._Master.updateUser(user).then(
+                (user) => {
+                    console.log('User deactivated')
+                },
+                (err) => {
+                    this.isSubmitting = false;
+                    this.errors = err.data.errors;
+                }
+            )
+        };
+
+        this.activateUser = function (user) {
+            this.isSubmitting = true;
+
+            user.active = true;
+
+            this._Master.updateUser(user).then(
+                (user) => {
+                    console.log('User activated')
+                },
+                (err) => {
+                    this.isSubmitting = false;
+                    this.errors = err.data.errors;
+                }
+            )
+        }
     }
 
     submitForm() {
         this.isSubmitting = true;
 
-        this._User.createUser(this.formData).then(
+        this.formData.active = true;
+
+        this._Master.createUser(this.formData).then(
             (res) => {
                 this.success = "Instructor successfully added.";
 
