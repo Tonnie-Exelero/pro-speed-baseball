@@ -87,4 +87,32 @@ export default class MasterHome {
             data: {user: user}
         }).then((res) => res.data.user);
     }
+
+    updateSingleUser(user, fields) {
+        return this._$http({
+            url: this._AppConstants.api + '/master/updateUser?id=' + user._id,
+            method: 'PUT',
+            data: {user: fields}
+        }).then((res) => res.data.user);
+    }
+
+    get(id, fields) {
+        let deferred = this._$q.defer();
+
+        if (!id.replace(" ", "")) {
+            deferred.reject("User Id is empty");
+            return deferred.promise;
+        }
+
+        this._$http({
+            url: this._AppConstants.api + '/master/user?id=' + id,
+            method: 'GET',
+            data: {basic: fields}
+        }).then(
+            (res) => deferred.resolve(res.data.user),
+            (err) => deferred.reject(err)
+        );
+
+        return deferred.promise;
+    }
 }

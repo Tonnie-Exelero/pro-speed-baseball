@@ -3,6 +3,7 @@ class UnlimitedPendingReviewsCtrl {
         'ngInject';
 
         this.appName = AppConstants.appName;
+        this.api = AppConstants.api;
         this._$scope = $scope;
         this._InHome = InstructorHome;
         this.currentUser = User.current;
@@ -21,7 +22,7 @@ class UnlimitedPendingReviewsCtrl {
             this._InHome.download(file).then(
                 (res) => {
                     console.log('Successful download');
-                    window.open('http://localhost:3000/api/instructor/download?file=' + file)
+                    window.open(this.api + '/instructor/download?file=' + file)
                 },
                 (err) => {
                     this.isSubmitting = false;

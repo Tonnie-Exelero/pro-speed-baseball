@@ -3,6 +3,7 @@ class UnlimitedInstructorDashboardCtrl {
         'ngInject';
 
         this.appName = AppConstants.appName;
+        this.api = AppConstants.api;
         this._$scope = $scope;
         this._InHome = InstructorHome;
         this.currentUser = User.current;
@@ -25,7 +26,7 @@ class UnlimitedInstructorDashboardCtrl {
             this._InHome.download(file).then(
                 (res) => {
                     console.log('Successful download');
-                    window.open('http://localhost:3000/api/instructor/download?file=' + file)
+                    window.open(this.api + '/instructor/download?file=' + file)
                 },
                 (err) => {
                     this.isSubmitting = false;
@@ -66,7 +67,7 @@ class UnlimitedInstructorDashboardCtrl {
 
         this.upload = function (file) {
             Upload.upload({
-                url: 'http://localhost:3000/api/basic/videoUpload', //webAPI exposed to upload the file
+                url: this.api + '/basic/videoUpload', //webAPI exposed to upload the file
                 data: {file: this.formData.video} //pass file as data, should be user ng-model
             }).then(function (resp) { //upload function returns a promise
                 if (resp.data.error_code === 0) { //validate success

@@ -14,7 +14,7 @@
         <div class="master-dash">
           <div class="tab">
             <input class="zero-tab" id="tab-one" type="checkbox" name="tabs">
-            <label for="tab-one" class="instructor-label">Add instructor</label>
+            <label for="tab-one" class="instructor-label">Add user</label>
             <div class="tab-content">
               <div class="form-style-2">
                 <form ng-submit="$ctrl.submitForm()" method="post">
@@ -50,7 +50,11 @@
 
       <div class="col-md-7">
         <p style="font-size: 18px; font-weight: bold">User management</p>
-        <table class="table table-striped">
+        <div class="form-group pull-right">
+          <input type="text" class="search form-control" ng-model="$ctrl.searchKeyword" placeholder="Search anything here">
+        </div>
+
+        <table class="table table-striped results">
           <thead>
           <tr>
             <th scope="col">Name</th>
@@ -59,7 +63,7 @@
             <th scope="col">Actions</th>
           </tr>
           </thead>
-          <tbody ng-repeat="user in $ctrl.users">
+          <tbody ng-repeat="user in $ctrl.users | filter: $ctrl.searchKeyword">
           <tr>
             <td>{{user.username}}</td>
             <td>{{user.role}}</td>
@@ -68,6 +72,12 @@
               <span ng-if="user.active === false" style="color: orangered">No</span>
             </td>
             <td>
+              <span style="margin-right: 5px">
+                <button class="btn btn-info" type="button" ui-sref="app.master_edit({id: user._id})">
+                Edit
+              </button>
+              </span>
+
               <span ng-if="user.active === true">
                 <button class="btn btn-warning" type="button" ng-click="$ctrl.deactivateUser(user)">
                   Deactivate

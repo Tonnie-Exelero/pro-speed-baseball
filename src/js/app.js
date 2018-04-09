@@ -20,6 +20,7 @@ import './main/master/home';
 import './main/master/dashboard';
 import './main/master/archive';
 import './main/master/instructor';
+import './main/master/edit';
 import './main/instructor/dashboard';
 import './main/instructor/finished-reviews';
 import './main/instructor/home';
@@ -43,6 +44,7 @@ import './main/editor';
 // Create and bootstrap application
 const requires = [
     'ui.router',
+    // 'ngPopup',
     'ngFileUpload',
     'templates',
     'app.layout',
@@ -56,6 +58,7 @@ const requires = [
     'app.master_dashboard',
     'app.master_archive',
     'app.master_instructor',
+    'app.master_edit',
     'app.instructor_dashboard',
     'app.instructor_finished_reviews',
     'app.instructor_home',
