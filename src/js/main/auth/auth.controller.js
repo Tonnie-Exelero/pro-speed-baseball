@@ -35,7 +35,7 @@ class AuthCtrl {
       },
       (err) => {
         this.isSubmitting = false;
-        this.errors = err.data.errors;
+        // this.errors = err.data.errors;
       }
     )
   }

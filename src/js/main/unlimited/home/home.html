@@ -66,11 +66,14 @@
                             name="file"
                             ngf-pattern="'**/*'"
                             accept="**/*"
-                            ngf-max-size="50MB"/>
-                    <p>Max: 50MB</p>
+                            ngf-max-size="75MB"
+                            multiple
+                    />
+                    <p style="color: #2aabd2">You can select a maximum of 6 videos together for upload.</p>
+                    <p>Max: 75MB</p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
-                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
+                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 75MB</i>
                   </div>
                 </div>
               </div>

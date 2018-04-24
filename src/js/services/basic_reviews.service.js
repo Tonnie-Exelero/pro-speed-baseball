@@ -24,4 +24,11 @@ export default class BasicReviews {
             data: {basic: field}
         }).then((res) => res.data.review);
     }
+
+    getSingleVideo(video) {
+        return this._$http({
+            url: this._AppConstants.api + '/basic/getVideo?video=' + video,
+            method: 'GET'
+        }).then((res) => res.data.theVideo);
+    }
 }

@@ -1,5 +1,5 @@
 class BasicReviewsCtrl {
-    constructor(AppConstants, $scope, BasicReviews) {
+    constructor(AppConstants, $scope, BasicReviews, $stateParams) {
         'ngInject';
 
         this.appName = AppConstants.appName;
@@ -7,7 +7,22 @@ class BasicReviewsCtrl {
         this._Reviews = BasicReviews;
 
         this._Reviews.getBasicReviews().then(
-            (reviews) => this.reviews = reviews
+            (reviews) => {
+
+                var i;
+
+                for (i=0; i<reviews.length; i++){
+
+                    if(reviews[i].video){
+
+                        this._Reviews.getSingleVideo(reviews[i].video).then(
+                            (theVideo) => this.theVideo = theVideo
+                        );
+                    }
+                }
+
+                this.reviews = reviews;
+            }
         );
 
         this.markRead = function (video) {

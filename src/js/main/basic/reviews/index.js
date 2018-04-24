@@ -7,7 +7,6 @@ let basicReviewsModule = angular.module('app.basic_reviews', []);
 import BasicReviewsConfig from './reviews.config';
 basicReviewsModule.config(BasicReviewsConfig);
 
-
 // Controllers
 import BasicReviewsCtrl from './reviews.controller';
 basicReviewsModule.controller('BasicReviewsCtrl', BasicReviewsCtrl);

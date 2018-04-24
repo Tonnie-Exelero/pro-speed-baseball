@@ -1,6 +1,5 @@
 const AppConstants = {
-  // api: 'https://conduit.productionready.io/api',
-  api: 'http://localhost:3000/api',
+  api: 'http://localhost:8080/api',
   jwtKey: 'jwtToken',
   appName: 'Pro Speed Baseball',
 };
