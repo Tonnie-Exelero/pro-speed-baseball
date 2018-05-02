@@ -1,34 +1,53 @@
 class BasicReviewsCtrl {
-    constructor(AppConstants, $scope, BasicReviews, $stateParams) {
+    constructor(AppConstants, $scope, BasicReviews, InstructorHome, $stateParams) {
         'ngInject';
 
         this.appName = AppConstants.appName;
         this._$scope = $scope;
+        this.api = AppConstants.api;
         this._Reviews = BasicReviews;
+        this._InHome = InstructorHome;
 
         this._Reviews.getBasicReviews().then(
             (reviews) => {
-
-                var i;
-
-                for (i=0; i<reviews.length; i++){
-
+                 /*for (let i=0; i<reviews.length; i++){
                     if(reviews[i].video){
 
                         this._Reviews.getSingleVideo(reviews[i].video).then(
-                            (theVideo) => this.theVideo = theVideo
+                            (theVideo) => {
+                                return this.theVideo = theVideo;
+                            }
                         );
+
+                        reviews[i].theVideo = this.theVideo;
                     }
-                }
+                }*/
 
                 this.reviews = reviews;
             }
         );
 
+        this.downloadFile = function(file){
+            this.isSubmitting = true;
+
+            for (let i=0; i<file.length; i++){
+                this._InHome.download(file[i]).then(
+                    (res) => {
+                        console.log('Successful download');
+                        window.open(this.api + '/instructor/download?file=' + file[i])
+                    },
+                    (err) => {
+                        this.isSubmitting = false;
+                        this.errors = err.data.errors;
+                    }
+                )
+            }
+        };
+
         this.markRead = function (video) {
             this.isSubmitting = true;
 
-            var videoChecked = {
+            let videoChecked = {
                 reviewChecked: true
             };
 

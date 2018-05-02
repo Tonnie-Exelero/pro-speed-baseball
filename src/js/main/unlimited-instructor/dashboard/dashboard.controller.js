@@ -23,16 +23,18 @@ class UnlimitedInstructorDashboardCtrl {
         this.downloadFile = function(file){
             this.isSubmitting = true;
 
-            this._InHome.download(file).then(
-                (res) => {
-                    console.log('Successful download');
-                    window.open(this.api + '/instructor/download?file=' + file)
-                },
-                (err) => {
-                    this.isSubmitting = false;
-                    this.errors = err.data.errors;
-                }
-            )
+            for (let i=0; i<file.length; i++){
+                this._InHome.download(file[i]).then(
+                    (res) => {
+                        console.log('Successful download');
+                        window.open(this.api + '/instructor/download?file=' + file[i])
+                    },
+                    (err) => {
+                        this.isSubmitting = false;
+                        this.errors = err.data.errors;
+                    }
+                )
+            }
         };
 
         this.updateReview = function() {

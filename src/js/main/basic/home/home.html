@@ -22,9 +22,8 @@
 
     <hr size="1" color="lightgrey">
 
-
     <form ng-submit="$ctrl.submitForm()" name="$ctrl.videoForm" enctype="multipart/form-data">
-      <div class="row">
+      <div class="row" ng-if="$ctrl.showForm === true">
         <!-- Main view - contains video uploads views -->
         <div class="col-md-5">
           <div class="upload">
@@ -32,7 +31,7 @@
               Upload video for review
             </div>
 
-            <div class="row">
+            <div class="row" >
               <div class="cols col-md-4">
                 <div class="custom-controls-stacked">
                   <label class="custom-control custom-radio">
@@ -70,10 +69,11 @@
                             ngf-pattern="'**/*'"
                             accept="**/*"
                             ngf-max-size="75MB"
+                            ng-change="$ctrl.checkFiles()"
                             multiple
                     />
                     <p style="color: #2aabd2">You can select a maximum of 2 videos together for upload.</p>
-                    <p>Max: 75MB</p>
+                    <p>Max: 75MB <span style="font-size: 12px">(.mp4, .3gp, .avi, .mov, .flv, .webm, .mpg, .mp2, .mpeg, .mpe, .mpv, .ogg, .m4p, .m4v)</span></p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
                       {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 75MB</i>
@@ -125,5 +125,28 @@
         <!-- End the row & container divs -->
       </div>
     </form>
+
+    <div class="row" ng-if="$ctrl.showForm === false">
+      <div class="cols col-md-4"></div>
+      <div class="cols col-md-4 text-center">
+        <div class="no-upload">
+          <img src="images/noupload.jpg" width="100%" height="auto">
+        </div>
+
+        <div class="upload-explain" style="margin-top: 10px">
+          <p>
+            Next upload will be available the 1st or 15th of every month!
+          </p>
+        </div>
+
+        <div style="color: orangered; font-size: 18px">
+          <p>
+            SENT! YOUR VIDEOS HAVE BEEN UPLOADED AND YOU WILL BE NOTIFIED
+            VIA EMAIL WHEN THE REVIEW IS READY!
+          </p>
+        </div>
+      </div>
+      <div class="cols col-md-4"></div>
+    </div>
   </div>
 </div>

@@ -301,3 +301,21 @@ input:checked ~ .tab-content {
     margin-top: 15px;
     color: #8c8c8c;
 }
+
+.video-image {
+    width: 270px;
+    height: 120px;
+    padding-top: 45px;
+    text-align: center;
+    background-color: dodgerblue;
+    color: #f7f7f7;
+    font-size: 20px;
+}
+
+.video-num-content {
+    vertical-align: middle;
+}
+
+.video-number {
+    color: #dff0d8;
+}
