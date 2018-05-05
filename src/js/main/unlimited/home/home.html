@@ -60,13 +60,14 @@
                     <input
                             type="file"
                             id="upload"
-                            ngf-select
                             ng-model="$ctrl.formData.video"
                             name="file"
+                            ngf-select
                             ngf-pattern="'**/*'"
                             accept="**/*"
+                            files-input
                             ngf-max-size="75MB"
-                            ng-change="$ctrl.checkFiles()"
+                            on-file-change="$ctrl.checkFiles"
                             multiple
                     />
                     <p style="color: #2aabd2">You can select a maximum of 6 videos together for upload.</p>

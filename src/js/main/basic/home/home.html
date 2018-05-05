@@ -63,20 +63,21 @@
                     <input
                             type="file"
                             id="upload"
-                            ngf-select
                             ng-model="$ctrl.formData.video"
                             name="file"
+                            ngf-select
                             ngf-pattern="'**/*'"
                             accept="**/*"
-                            ngf-max-size="75MB"
-                            ng-change="$ctrl.checkFiles()"
+                            files-input
+                            ngf-max-size="50MB"
+                            on-file-change="$ctrl.checkFiles"
                             multiple
                     />
                     <p style="color: #2aabd2">You can select a maximum of 2 videos together for upload.</p>
-                    <p>Max: 75MB <span style="font-size: 12px">(.mp4, .3gp, .avi, .mov, .flv, .webm, .mpg, .mp2, .mpeg, .mpe, .mpv, .ogg, .m4p, .m4v)</span></p>
+                    <p>Max: 50MB <span style="font-size: 12px">(.mp4, .3gp, .avi, .mov, .flv, .webm, .mpg, .mp2, .mpeg, .mpe, .mpv, .ogg, .m4p, .m4v)</span></p>
                     <i ng-show="$ctrl.videoForm.file.$error.required">*required</i><br>
                     <i ng-show="$ctrl.videoForm.file.$error.maxSize">File too large
-                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 75MB</i>
+                      {{$ctrl.formData.video.size / 1000000|number:1}}MB: max 50MB</i>
                   </div>
                 </div>
               </div>

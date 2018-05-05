@@ -14,19 +14,19 @@ class UnlimitedHomeCtrl {
 
         this.videoNames = [];
 
-        this.fileInput = document.getElementById('upload');
-
-        var date = new Date(), y = date.getFullYear(), m = date.getMonth();
-        var firstDay = new Date(y, m, 1);
-        var fifteenthDay = new Date(y, m, 15);
+        const date = new Date(), y = date.getFullYear(), m = date.getMonth();
+        const firstDay = new Date(y, m, 1);
+        const fifteenthDay = new Date(y, m, 15);
 
         this.fDay = Date.parse(firstDay);
         this.fthDay = Date.parse(fifteenthDay);
 
-        this.checkFiles = function () {
-            if (this.fileInput.files.length > 6){
+        this.checkFiles = function (files) {
+            if (files.length > 6){
                 alert("You are only allowed to upload a maximum of 6 files. Please select only 6 files.");
-                this.formData = {};
+
+                let gogo = document.getElementById('upload');
+                gogo.value = '';
             }
         };
 
@@ -51,7 +51,7 @@ class UnlimitedHomeCtrl {
         );
 
         this.upload = function (videos) {
-            let files = this.fileInput.files;
+            let files = videos;
 
             for(let i =0; i < files.length; i++) {
                 Upload.upload({
@@ -79,8 +79,8 @@ class UnlimitedHomeCtrl {
         {
             this.isSubmitting = true;
 
-            if (this.videoForm.file.$valid) { //check if from is valid
-                this.upload(this.fileInput.files);
+            if(this.formData.video){
+                this.upload(this.formData.video);
             }
 
             this.formData = {

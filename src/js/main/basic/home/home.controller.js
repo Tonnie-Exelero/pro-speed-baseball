@@ -22,10 +22,12 @@ class BasicHomeCtrl {
         this.fDay = Date.parse(firstDay);
         this.fthDay = Date.parse(fifteenthDay);
 
-        this.checkFiles = function () {
-            if (this.fileInput.files.length > 2){
+        this.checkFiles = function (files) {
+            if (files.length > 2){
                 alert("You are only allowed to upload a maximum of 2 files. Please select only 2 files.");
-                this.formData = {};
+
+                let gogo = document.getElementById('upload');
+                gogo.value = '';
             }
         };
 
@@ -56,7 +58,7 @@ class BasicHomeCtrl {
         );
 
         this.upload = function (videos) {
-            let files = this.fileInput.files;
+            let files = videos;
 
             for(let i =0; i < files.length; i++) {
                 Upload.upload({
@@ -84,8 +86,8 @@ class BasicHomeCtrl {
         {
             this.isSubmitting = true;
 
-            if (this.videoForm.file.$valid) { //check if from is valid
-                this.upload(this.fileInput.files);
+            if(this.formData.video){
+                this.upload(this.formData.video);
             }
 
             this.formData = {
