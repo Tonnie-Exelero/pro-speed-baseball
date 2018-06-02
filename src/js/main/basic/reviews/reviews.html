@@ -36,30 +36,26 @@
                 <div class="video-date">{{video.createdAt | date:'dd-MM-yyyy - HH:mm:ss'}}  <span ng-if="video.reviewChecked === false" style="color: orangered">New review</span></div>
                 <div class="single-video">
                   <div class="the-video">
-                    <div class="video-image">
+                    <!--<div class="video-image">
                       <p class="video-num-content">
                         <span class="video-number">{{video.video.length}}</span> video(s)
                       </p>
-                    </div>
+                    </div>-->
+                    <video width="270" height="120" controls autoplay>
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/{{video.video[0]}}" type="video/mp4">
+                      <!--<source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/ogg">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/3gp">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/avi">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/mpeg-4">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/webm">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/wmv">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/flv">
+                      <source src="//PRO-SPEED-BASEB/c/Users/dudevegan/Desktop/pro-speed-baseball/backend/uploads/hera.mp4" type="video/mov">-->
+                      Your browser does not support the video tag.
+                    </video>
                     <div>
                       <a href="" ng-if="video.video" ng-click="$ctrl.downloadFile(video.video)">Download all videos</a>
                     </div>
-                    <!--<video width="300" height="150" controls>
-                      <source src="{{video.theVideo}}" type="video/mp4">
-                      <source src="{{video.theVideo}}" type="video/3gp">
-                      <source src="{{video.theVideo}}" type="video/avi">
-                      <source src="{{video.theVideo}}" type="video/mov">
-                      <source src="{{video.theVideo}}" type="video/flv">
-                      <source src="{{video.theVideo}}" type="video/webm">
-                      <source src="{{video.theVideo}}" type="video/mpg">
-                      <source src="{{video.theVideo}}" type="video/mp2">
-                      <source src="{{video.theVideo}}" type="video/mpeg">
-                      <source src="{{video.theVideo}}" type="video/mpe">
-                      <source src="{{video.theVideo}}" type="video/mpv">
-                      <source src="{{video.theVideo}}" type="video/ogg">
-                      <source src="{{video.theVideo}}" type="video/m4p">
-                      <source src="{{video.theVideo}}" type="video/m4v">
-                    </video>-->
                   </div>
                 </div>
               </div>
@@ -67,7 +63,7 @@
             <td width="50%" style="margin-right: 20%">
               <div class="notes-title">
                 Notes <a href=""><span ng-if="video.reviewChecked === false" style="font-size: 12px;" ng-click="$ctrl.markRead(video)">Mark read</span></a>
-                <span style="font-size: 16px; font-weight: 400"><a href="" ng-if="video.video2" ng-click="$ctrl.downloadFile(video.video2)">Download review</a></span>
+                <button class="btn btn-danger" ng-if="video.video2" ng-click="$ctrl.downloadReview(video.video2)">Download review</button>
               </div>
 
               <div class="video-notes">

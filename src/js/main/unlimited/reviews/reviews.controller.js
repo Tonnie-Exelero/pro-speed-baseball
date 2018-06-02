@@ -10,21 +10,6 @@ class UnlimitedReviewsCtrl {
 
         this._Reviews.getBasicReviews().then(
             (reviews) => {
-                /*
-                var i;
-
-                for (i=0; i<reviews.length; i++){
-
-                    if(reviews[i].video){
-
-                        this._Reviews.getSingleVideo(reviews[i].video).then(
-                            (theVideo) => this.theVideo = theVideo
-                        );
-
-                        reviews[i].theVideo = this.theVideo;
-                    }
-                }
-*/
                 this.reviews = reviews;
             }
         );
@@ -44,6 +29,21 @@ class UnlimitedReviewsCtrl {
                     }
                 )
             }
+        };
+
+        this.downloadReview = function(file){
+            this.isSubmitting = true;
+
+            this._InHome.download(file).then(
+                (res) => {
+                    console.log('Successful download');
+                    window.open(this.api + '/instructor/download?file=' + file)
+                },
+                (err) => {
+                    this.isSubmitting = false;
+                    this.errors = err.data.errors;
+                }
+            )
         };
 
         this.markRead = function (video) {

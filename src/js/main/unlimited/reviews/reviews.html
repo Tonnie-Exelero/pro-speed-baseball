@@ -41,22 +41,6 @@
                     <div>
                       <a href="" ng-if="video.video" ng-click="$ctrl.downloadFile(video.video)">Download all videos</a>
                     </div>
-                    <!--<video width="300" height="150" controls>
-                      <source src="{{video.theVideo}}" type="video/mp4">
-                      <source src="{{video.theVideo}}" type="video/3gp">
-                      <source src="{{video.theVideo}}" type="video/avi">
-                      <source src="{{video.theVideo}}" type="video/mov">
-                      <source src="{{video.theVideo}}" type="video/flv">
-                      <source src="{{video.theVideo}}" type="video/webm">
-                      <source src="{{video.theVideo}}" type="video/mpg">
-                      <source src="{{video.theVideo}}" type="video/mp2">
-                      <source src="{{video.theVideo}}" type="video/mpeg">
-                      <source src="{{video.theVideo}}" type="video/mpe">
-                      <source src="{{video.theVideo}}" type="video/mpv">
-                      <source src="{{video.theVideo}}" type="video/ogg">
-                      <source src="{{video.theVideo}}" type="video/m4p">
-                      <source src="{{video.theVideo}}" type="video/m4v">
-                    </video>-->
                   </div>
                 </div>
               </div>
@@ -64,7 +48,7 @@
             <td width="50%" style="margin-right: 20%">
               <div class="notes-title">
                 Notes <a href=""><span ng-if="video.reviewChecked === false" style="font-size: 12px;" ng-click="$ctrl.markRead(video)">Mark read</span></a>
-                <span style="font-size: 16px; font-weight: 400"><a href="" ng-if="video.video2" ng-click="$ctrl.downloadFile(video.video2)">Download review</a></span>
+                <button class="btn btn-danger" ng-if="video.video2" ng-click="$ctrl.downloadReview(video.video2)">Download review</button>
               </div>
 
               <div class="video-notes">
